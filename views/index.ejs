@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MY APP</title>
+</head>
+<body>
+  May Node and Express be with you.
+
+  <ul class="dogs">
+  <% for(var i=0; i<dogs.length; i++) {%>
+    <li class="quote">
+      <span><%= dogs[i].name %></span>
+      <span><%= dogs[i].quote %></span>
+    </li>
+  <% } %>
+  </ul>
+
+  <form action="/dogs" method="POST">
+    <input type="text" placeholder="name" name="name">
+    <input type="text" placeholder="quote" name="quote">
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
